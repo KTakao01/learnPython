@@ -1,5 +1,4 @@
-https://www.learnpython.org/en/Hello%2C_World%21
-
+[Learn Python - Hello, World!](https://www.learnpython.org/en/Hello%2C_World%21)
 要点
 ・pythonの良いところ：シンプルさ（ボイラープレートコードがない）
 ・python3を使用すること

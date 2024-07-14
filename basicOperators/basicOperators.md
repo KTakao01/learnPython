@@ -1,4 +1,5 @@
-https://www.learnpython.org/en/Basic_Operators
++ [Learn Python - Basic Operators](https://www.learnpython.org/en/Basic_Operators)
+
 
 1.算術演算子は他プログラミング言語と同様に使用できる。
 以下に例示する。

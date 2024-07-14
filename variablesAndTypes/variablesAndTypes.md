@@ -30,3 +30,6 @@ print(helloworld)
 a, b = 3, 4
 
 ・stringsとnumbersを混同して処理することはできない 
+
+練習問題の所感
+・書き方がGoっぽい。

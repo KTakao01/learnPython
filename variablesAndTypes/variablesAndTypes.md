@@ -1,3 +1,5 @@
+https://www.learnpython.org/en/Variables_and_Types
+
 要点
 ・pythonはオブジェクト指向言語、静的型付け
 ・主に次の型をサポート。Numbers:integer,float / Strings /

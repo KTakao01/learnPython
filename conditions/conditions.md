@@ -1,13 +1,13 @@
 [Learn Python - Conditions](https://www.learnpython.org/en/Conditions)
 
-1.条件の評価、比較は比較演算子で行う。
-2.変数の代入と記号が似ているので注意する。
-**3.in演算子でリストなどのオブジェクトに指定されたオブジェクトが含まれているかどうかを調べられる。**
-4.コードブロックはインデントで行う。４スペースが通常だが一貫性があれば、他のサイズでも構わない。特別な終了記号や構文（"termination"）が不要。ex)Endなど
+1.条件の評価、比較は比較演算子で行う。  
+2.変数の代入と記号が似ているので注意する。  
+**3.in演算子でリストなどのオブジェクトに指定されたオブジェクトが含まれているかどうかを調べられる。**  
+4.コードブロックはインデントで行う。４スペースが通常だが一貫性があれば、他のサイズでも構わない。特別な終了記号や構文（"termination"）が不要。ex)Endなど  
 
-5.ちょっと理解に自信ない。
-True,空でないオブジェクトはTrueとして評価される
-空文字、空のリスト、0、FalseはFalseとして評価される。
+5.ちょっと理解に自信ない。  
+True,空でないオブジェクトはTrueとして評価される  
+空文字、空のリスト、0、FalseはFalseとして評価される。  
 
 ```
 A statement is evaulated as true if one of the following is correct: 1. The "True" boolean variable is given, or calculated using an expression, such as an arithmetic comparison. 2. An object which is not considered "empty" is passed.
@@ -15,7 +15,7 @@ A statement is evaulated as true if one of the following is correct: 1. The "Tru
 Here are some examples for objects which are considered as empty: 1. An empty string: "" 2. An empty list: [] 3. The number zero: 0 4. The false boolean variable: False
 ```
 
-6.is演算子でオブジェクトの同一性を調べることができる。
+6.is演算子でオブジェクトの同一性を調べることができる。  
 ```python 
 x = [1,2,3]
 y = [1,2,3]
@@ -27,11 +27,11 @@ print(x is z) # Prints out True
 print(x) # [1, 2, 3, 4]
 ```
 
-ポインタないと、イミュータブルかミュータブルでシャローコピーかディープコピーかをわけるのか。よくわかってないけど本題からそれるので頭の片隅に置くだけおいて次に進む。
+ポインタないと、イミュータブルかミュータブルでシャローコピーかディープコピーかをわけるのか。よくわかってないけど本題からそれるので頭の片隅に置くだけおいて次に進む。  
 
-column.
-ポインタないと、イミュータブルかミュータブルでシャローコピーかディープコピーかをわけるのか。よくわかってないけど本題からそれるので頭の片隅に置くだけおいて次に進む。
-Claudeさんに聞いてみた。
+column.  
+ポインタないと、イミュータブルかミュータブルでシャローコピーかディープコピーかをわけるのか。よくわかってないけど本題からそれるので頭の片隅に置くだけおいて次に進む。  
+Claudeさんに聞いてみた。  
 
 備忘録
 
@@ -73,4 +73,4 @@ print(y)  # 6
 また出てきたとき裏をとる
 
 
-7.not演算子で条件を反転させられる。
+7.not演算子で条件を反転させられる。  

@@ -1,4 +1,4 @@
-[Leann Python - Modules and Packages](https://www.learnpython.org/en/Modules_and_Packages)
+[Learn Python - Modules and Packages](https://www.learnpython.org/en/Modules_and_Packages)
 要点
 1.モジュールは特定の機能を持つソフトウェアの一部。モジュールはそれぞれ別のファイル。
 2.モジュール名.モジュールの関数でそのモジュールの関数を呼び出す。
@@ -196,7 +196,7 @@ main_screen オブジェクトは、このモジュールを使用するすべ�
 アプリケーション全体で一貫したスクリーンオブジェクトを使用できます。
 ```
 
-8.組み込みモジュールは(pythonインタプリタで該当のモジュールをインポート後？)dirやhelp関数で詳細を表示できる。
+8.組み込みモジュールは(該当のモジュールをインポート後？)dirやhelp関数で詳細を表示できる。
 9.パッケージには__init__.pyというファイルがある。
 
 mypackage/

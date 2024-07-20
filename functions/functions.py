@@ -9,8 +9,8 @@ def list_benefits():
 
 # Modify this function to concatenate to each benefit - " is a benefit of functions!"
 def build_sentence(benefit):
-    scentence = "%s is a benefit of functions!" % benefit
-    return scentence
+    sentence = "%s is a benefit of functions!" % benefit
+    return sentence
 
 def name_the_benefits_of_functions():
     list_of_benefits = list_benefits()

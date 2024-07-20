@@ -1,4 +1,4 @@
-[Learn Python - Functions ](https://www.learnpython.org/en/Functions)
+[Learn Python - Functions](https://www.learnpython.org/en/Functions)
 要点
 1.関数を用いる効用　ーーコードを整理、可読性向上、再利用性向上によって時間節約。またコードを共有できるようにインターフェースを決められる。
 

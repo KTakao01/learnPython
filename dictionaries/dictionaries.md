@@ -16,3 +16,10 @@ for name, number in phonebook.items():
 del phonebook["John"]
 phonebook.pop("John")
 ```
+
+(cf)いただいたコメント
+sasanquaneufさん
+```
+3.7以降のpythonの辞書の反復処理では（少なくともcpythonでは）順序は保持されます。
+https://docs.python.org/3/library/stdtypes.html#dictionary-view-objects
+```

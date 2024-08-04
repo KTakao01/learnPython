@@ -3,7 +3,7 @@
 def fib():
     pass #this is a null statement which does nothing when executed, useful as a placeholder.
     a,b = 1,1
-    for i in range(12):
+    for _ in range(12):
         a = a+b
         b = a+b
         yield a,b

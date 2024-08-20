@@ -13,7 +13,7 @@ def foo(first, second, third, *therest):
 foo(1, 2, 3, 4, 5)
 ```
 
-3.キーワードで引数を渡すこともできる。ここでは options.get("キーワード")=="キーワードの値"
+3.キーワードで引数を渡すこともできる。ここでは options.get("キーワード")=="キーワードの値" で値を受け取る。
 
 ```python
 def bar(first, second, third, **options):

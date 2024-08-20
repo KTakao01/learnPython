@@ -1,12 +1,21 @@
 # Fill in the foo and bar functions so they can receive a variable amount of arguments (3 or more) The foo function must return the amount of extra arguments received. The bar must return True if the argument with the keyword magicnumber is worth 7, and False otherwise.
 # edit the functions prototype and implementation
-def foo(a, b, c, *therest):
-    return len(list(therest))
 
-def bar(a, b, c, **options):
-    if options.get("magicnumber") == 7:
-        return True
-    return False
+# コードレビュー後
+def foo(a, b, c, *args):
+    return len(args)
+
+def bar(a, b, c, **kwargs):
+    return options.get("magicnumber") == 7
+
+# 初回
+# def foo(a, b, c, *therest):
+#     return len(list(therest))
+
+# def bar(a, b, c, **options):
+#     if options.get("magicnumber") == 7:
+#         return True
+#     return False
     
 # test code
 if foo(1, 2, 3, 4) == 1:

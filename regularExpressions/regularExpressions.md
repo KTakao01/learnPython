@@ -26,7 +26,7 @@ print(re.search(pattern, "Nada...:-("))
 # End Example
 ```
 
-"\"はエスケープ
+"\\"はエスケープ
 
 ※re.complile()とは？
 Claude3 によると・・・

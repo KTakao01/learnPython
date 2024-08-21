@@ -11,3 +11,8 @@ def test_email(your_pattern):
             print("Pass")
 pattern = r".*@.*\..*" # Your pattern here!
 test_email(pattern)
+
+
+# 模範解答
+# pattern = r"\"?([-a-zA-Z0-9.`?{}]+@\w+\.\w+)\"?"
+# 使用する特殊文字の制限

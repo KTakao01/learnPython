@@ -16,10 +16,17 @@ def get_last_name():
             raise ValueError("Last name is not alphabetic.")
     except ValueError as e:
         print("Error: %s" % e)
+    # codeRabbitの提案
+    except KeyError as e:
+        print("Error: Key 'name' not found in actor dictionary.")
+    except IndexError as e:
+        print("Error: Actor name list is empty.")
             
 # Test code
 get_last_name()
 print("All exceptions caught! Good job!")
+# codeRabbitの提案
+assert actor["last_name"] == "Cleese", "Test failed: Last name is not 'Cleese'"
 print("The actor's last name is %s" % get_last_name())
 
 

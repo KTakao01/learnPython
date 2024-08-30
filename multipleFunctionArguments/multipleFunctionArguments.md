@@ -1,5 +1,5 @@
-要点抜粋  
-1.通常、関数の引数の数は事前に宣言される。  
+[Learn Python - Multiple Function Arguments](https://www.learnpython.org/en/Multiple_Function_Arguments)
+要点 1.通常、関数の引数の数は事前に宣言される。  
 2.＊を引数の前に記載して、可変の引数を設定できる。  
 （例）
 

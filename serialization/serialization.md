@@ -1,4 +1,5 @@
-要点抜粋
+[Learn Python - Serialization](https://www.learnpython.org/en/Serialization)
+要点
 1.python には json(python2.7 以降)という JSON のエンコード、デコードのための組み込みライブラリが備わっている。
 JSON データのフォーマットには２種類あり、オブジェクトデータ構造と文字列がある。
 オブジェクトデータ型にはデータを削除したり追加、検索するなどのメソッドを使える。

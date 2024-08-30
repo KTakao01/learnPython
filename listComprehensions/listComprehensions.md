@@ -1,4 +1,5 @@
-要点抜粋
+[Learn Python - List Comprehensions](https://www.learnpython.org/en/List_Comprehensions)
+要点
 1.list comprehensions はあるリストに基づいて別のリストを作成する手段。
 ※最初の例を見る限りは普通のリストの作成方法と変わらない気がした。
 → 合っていて、普通のリストの作成方法だった。

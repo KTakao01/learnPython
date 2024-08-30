@@ -1,4 +1,6 @@
-要点抜粋 1.普通、関数は def キーワードで定義していつでも必要な時に呼び出せる。
+[Learn Python - Lambda functions](https://www.learnpython.org/en/Lambda_functions)
+要点  
+1.普通、関数は def キーワードで定義していつでも必要な時に呼び出せる。  
 ラムダ関数は、同じ場所で１度だけ使うために定義されるインライン関数。
 
 2.ラムダ関数は別名、匿名関数と呼ばれ、lambda キーワードを使って定義する。

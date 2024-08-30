@@ -1,36 +1,44 @@
 [Variables and Types](https://www.learnpython.org/en/Variables_and_Types)
 要点  
-・pythonはオブジェクト指向言語、静的型付け  
+・python はオブジェクト指向言語、動的型付け言語。変数を用いる前に宣言する必要がなく、型を宣言する必要もない。python のすべての変数はオブジェクト。
 ・主に次の型をサポート。Numbers:integer,float / Strings /  
-・Stringはシングル、ダブルクオートの両方を使えるが、アポストロフィーが文字列にあるとき、シングルクオートを使っているとアポストロフィーで終わってしまう（シングルクオートとアポストロフィーは同一文字？なので、基本的にダブルクオートを使った方が楽かも？）  
+・String はシングル、ダブルクオートの両方を使える。ただし、アポストロフィーが文字列にあるとき、シングルクオートを使っているとアポストロフィーまでが対象範囲とされてしまうし、ダブルクオートが文中にあるときは文中のダブルクオートとされてしまう。
 
-・そのほかのStringsの仕様はpython documentation参照とのこと。気になった点を抜粋  
-'doesn't'  # use ' to escape the single quote...  
->>"doesn't"  
-シングルクオートのエスケープ
-  
-print('C:\some\name')  # here \n means newline!  
->>C:\some  
-ame  
-print(r'C:\some\name')  # note the r before the quote  
->>C:\some\name  
-改行記号のエスケープ  
+・そのほかの Strings の仕様は [python documentation 参照](https://docs.python.org/3/tutorial/introduction.html#strings)とのこと。気になった点を抜粋
 
-'"Yes," they said.'  
->>'"Yes," they said.'  
-ダブルクオートは万能ではない  
-  
-・文字列にも単純な演算子を適用できる  
+```python
+>>>'doesn\'t'  # use \' to escape the single quote...
+"doesn't"
 
-hello = "hello"  
-world = "world"  
-helloworld = hello + " " + world  
-print(helloworld)  
+>>>"doesn't"  # ...or use double quotes instead
+"doesn't"
 
-・複数の変数に1行で代入可能  
-a, b = 3, 4  
+>>>'"Yes," they said.'
+'"Yes," they said.'
 
-・stringsとnumbersを混同して処理することはできない   
+>>>"\"Yes,\" they said."
+'"Yes," they said.'
+
+>>>'"Isn\'t," they said.'
+'"Isn\'t," they said.'
+```
+
+・文字列にも単純な演算子を適用できる
+
+```python
+hello = "hello"
+world = "world"
+helloworld = hello + " " + world
+print(helloworld)
+```
+
+・複数の変数に 1 行で代入可能
+
+```python
+a, b = 3, 4
+```
+
+・strings と numbers を混同して処理することはできない
 
 練習問題の所感  
-・書き方がGoっぽい。  
+・書き方が Go っぽい。

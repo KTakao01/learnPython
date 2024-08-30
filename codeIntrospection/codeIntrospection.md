@@ -20,7 +20,7 @@ __name__
 上記のうち一部抜粋して説明
 dir()
 
-https://qiita.com/SAKD/items/bee463de53ecbdf574c6
+[Qiita の記事](https://qiita.com/SAKD/items/bee463de53ecbdf574c6)
 
 ```python
 class Sample():

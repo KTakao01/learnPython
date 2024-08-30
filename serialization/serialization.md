@@ -11,6 +11,17 @@ import json
 print(json.loads(json_string))
 ```
 
+```python
+import json
+json.loads('["foo", {"bar":["baz", null, 1.0, 2]}]')
+
+json.loads('"\\"foo\\bar"')
+
+from io import StringIO
+io = StringIO('["streaming API"]')
+json.load(io)
+```
+
 3.データ構造を JSON 文字列にエンコードするには dumps メソッドを用いる。
 
 ```python

@@ -21,3 +21,9 @@ strings.append("world")
 print(numbers)
 print(strings)
 print("The second name on the names list is %s" % second_name)
+
+#出力
+# <script.py> output:
+#     [1, 2, 3]
+#     ['hello', 'world']
+#     The second name on the names list is Eric

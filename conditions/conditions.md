@@ -45,7 +45,7 @@ elif another_statement is True: # else if
     print('b')
 else:
     # do another thing
-    priny('c')
+    print('c')
 
 # output
 # b

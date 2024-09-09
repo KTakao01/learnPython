@@ -16,3 +16,28 @@ for number in numbers:
     if(number%2!=0):
         continue
     print(number)
+
+# output
+# <script.py> output:
+#     402
+#     984
+#     360
+#     408
+#     980
+#     544
+#     390
+#     984
+#     592
+#     236
+#     942
+#     386
+#     462
+#     418
+#     344
+#     236
+#     566
+#     978
+#     328
+#     162
+#     758
+#     918

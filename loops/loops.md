@@ -69,7 +69,7 @@ for x in range(10):
 ただし,break で抜けたときは while,for ループともに else の処理は実行されない。continue がある場合は else の処理は実行される。
 for 文では
 
-````python
+```python
 # Prints out 0,1,2,3,4 and then it prints "count value reached 5"
 count=0
 while(count<5):
@@ -77,7 +77,9 @@ while(count<5):
     count +=1
 else:
     print("count value reached %d" %(count))
+```
 
+```python
 # Prints out 0,1
     count=0
 while(count<5):
@@ -87,8 +89,9 @@ while(count<5):
         break
 else:
     print("count value reached %d" %(count))
+```
 
-
+```python
 # Prints out 1,2,3,4
 for i in range(1, 10):
     if(i%5==0):
@@ -96,7 +99,9 @@ for i in range(1, 10):
     print(i)
 else:
     print("this is not printed because for loop is terminated because of break but not due to fail in condition")
+```
 
+```python
 # Prints out 1,2,3,4,6,7,8,9,9,done
 for i in range(1, 10):
     if(i%5==0):
@@ -105,9 +110,11 @@ for i in range(1, 10):
 else:
     print(i)
     print("done")
-    ```
+```
 
+Excersise の所感
+最初、奇数判定の条件分岐を前にもってきていて、237 の判定を後に持ってきていて失敗しました。
 
-Excersiseの所感
-最初、奇数判定の条件分岐を前にもってきていて、237の判定を後に持ってきていて失敗しました。
-````
+```
+
+```

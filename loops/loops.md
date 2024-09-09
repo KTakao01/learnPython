@@ -18,8 +18,7 @@ for x in range(3, 8, 2):
 ```
 
 2.for ~ in ... はシーケンス型のオブジェクトに対して使用できるループ。  
-(cf)シーケンスとは  
-https://www.python.jp/train/tuple/sequence.html
+[(cf)シーケンスとは](https://www.python.jp/train/tuple/sequence.html)
 
 > リスト・タプル・文字列はいずれも コレクション に属するオブジェクトですが、コレクションの一種で、整数値のインデックスを指定して要素を参照できるオブジェクトのことを、シーケンス (Sequence)と呼びます。
 

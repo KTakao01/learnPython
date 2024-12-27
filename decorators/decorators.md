@@ -60,3 +60,104 @@ def greet(name):
 上記のように、@repeater を付ける（デコレータを付与する）と、関数 greet を呼び出したときに、同じ関数処理を2回連続で行います。
 
 ```
+
+使い方
+
+```python
+>>> @repeater
+def multiply(num1, num2):
+    print(num1 * num2)
+
+>>> multiply(2, 3)
+6
+6
+```
+
+2-1.実例 2 つ目
+
+```python
+def multiply(multiplier):
+    def multiply_generator(old_function):
+        def new_function(*args, **kwds):
+            return multiplier * old_function(*args, **kwds)
+        return new_function
+    return multiply_generator # it returns the new generator
+
+# Usage
+@multiply(3) # multiply is not a generator, but multiply(3) is
+def return_num(num):
+    return num
+
+# Now return_num is decorated and reassigned into itself
+return_num(5) # should return 15
+```
+
+```python
+このコードも「デコレータ (decorator)」を使ったサンプルです。multiply(multiplier) というデコレータ生成関数を用いて、ある関数の返り値を一定倍にして返す、という仕組みを実装しています。
+
+コード全体の流れ
+python
+コードをコピーする
+def multiply(multiplier):
+    def multiply_generator(old_function):
+        def new_function(*args, **kwds):
+            return multiplier * old_function(*args, **kwds)
+        return new_function
+    return multiply_generator  # it returns the new generator
+
+@multiply(3)  # multiply(3) はデコレータとして働く
+def return_num(num):
+    return num
+
+print(return_num(5))  # 結果: 15
+1. multiply(multiplier)
+まず、この関数は デコレータ生成関数 です。
+@multiply(3) のように呼び出されると、3 が引数 multiplier に入ります。そして戻り値として、multiply_generator という関数を返します。
+
+multiply(3) が呼ばれると、その戻り値は関数 multiply_generator です。
+つまり、最終的にデコレータとして使われるのは multiply_generator という関数になります。
+2. multiply_generator(old_function)
+multiply_generator は、実際にデコレート対象の関数 (old_function) を受け取り、新しい関数 (new_function) を返す関数です。
+
+ここでは、@multiply(3) を付けた関数を old_function と呼んでいます（例: return_num が old_function に当たります）。
+3. new_function(*args, **kwds)
+new_function は、実際にデコレータを適用した結果の“置き換わり後”の関数です。
+この関数では元の関数 (old_function) を呼び出し、その返り値に multiplier を掛けた結果を返しています。
+
+python
+コードをコピーする
+def new_function(*args, **kwds):
+    return multiplier * old_function(*args, **kwds)
+*args, **kwds は、可変長引数および可変長キーワード引数を受け取るためのものです。
+ここでは、どんな引数構成の関数でも正しく受け渡しできるように利用しています。
+4. return multiply_generator
+multiply(multiplier) の末尾で、multiply_generator を返しています。
+
+これによって、@multiply(3) という「(3)を渡した後の結果」をデコレータとして使用できるようになります。
+使い方
+python
+コードをコピーする
+@multiply(3)
+def return_num(num):
+    return num
+@multiply(3) は、まず multiply(3) を呼び出します。
+すると multiply_generator という関数が返ってきます。
+Python は、その返ってきた multiply_generator に対して、return_num 関数を old_function として渡します。
+つまり実際には multiply_generator(return_num) という呼び出しが行われています。
+その結果 multiply_generator(return_num) は new_function を返し、return_num の定義が new_function で上書きされます。
+実行イメージ
+python
+コードをコピーする
+return_num(5)
+デコレートされた return_num は new_function になっているので、内部では
+python
+コードをコピーする
+return multiplier * old_function(*args, **kwds)
+に従って 3 * return_num(5) (元の関数) を実行し、戻り値として 15 が返ってきます。
+まとめ
+multiply は デコレータを生成する関数 で、引数として multiplier を受け取る。
+返り値として、multiply_generator という デコレータ関数 を返す。
+multiply_generator は、元の関数 (old_function) を受け取り、新しい関数(new_function)を返す。
+new_function では、元の関数を呼び出して得られた値に multiplier を掛け合わせた値を返す。
+デコレータの仕組みの理解に役立つサンプルコードです。
+```

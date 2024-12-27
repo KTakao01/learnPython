@@ -161,3 +161,9 @@ multiply_generator は、元の関数 (old_function) を受け取り、新しい
 new_function では、元の関数を呼び出して得られた値に multiplier を掛け合わせた値を返す。
 デコレータの仕組みの理解に役立つサンプルコードです。
 ```
+
+3.演習問題の感想
+できなかった点
+・isinstance を知らなかった
+・multiple_function でネストしている関数を return し忘れ
+・if で return し忘れ

@@ -1,0 +1,11 @@
+{
+  "[python]": {
+    // Blackでフォーマット
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true // 保存時に適用
+  },
+  // "black-formatter.cwd": "${workspaceFolder}/basicOperators",
+  // "editor.defaultFormatter": "ms-python.black-formatter"
+}

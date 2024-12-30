@@ -1,3 +1,6 @@
+[Learn Python - Map, Filter, Reduce
+](https://www.learnpython.org/en/Map%2C_Filter%2C_Reduce)
+
 0.mapはコールバック関数を引数にとり、そのコールバック関数を各要素に対して実行する。
 1.mapの戻り値はmap object。listではない
 2.コールバック関数に必要な引数の数だけmapに渡す。過不足ある場合は、対応する引数の数だけ反復処理して、エラーは発生せず停止する。
